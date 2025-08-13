@@ -1,6 +1,5 @@
 package dev.compare.mvcvsreact.mvc.product.repository;
 
-import dev.compare.mvcvsreact.mvc.category.model.CategoryEntity;
 import dev.compare.mvcvsreact.mvc.product.model.ProductEntity;
 import dev.compare.mvcvsreact.mvc.product.model.ProductSearchRequest;
 import lombok.RequiredArgsConstructor;

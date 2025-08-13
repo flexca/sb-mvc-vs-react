@@ -1,6 +1,5 @@
 package dev.compare.mvcvsreact.react.product.model;
 
-import dev.compare.mvcvsreact.react.category.model.CategoryEntity;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 

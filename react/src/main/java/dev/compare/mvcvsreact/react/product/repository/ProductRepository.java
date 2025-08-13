@@ -1,7 +1,5 @@
 package dev.compare.mvcvsreact.react.product.repository;
 
-import com.mongodb.client.result.DeleteResult;
-import dev.compare.mvcvsreact.react.category.model.CategoryEntity;
 import dev.compare.mvcvsreact.react.product.model.ProductEntity;
 import dev.compare.mvcvsreact.react.product.model.ProductSearchRequest;
 import lombok.RequiredArgsConstructor;
@@ -9,12 +7,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.util.List;
 
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;

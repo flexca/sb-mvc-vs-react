@@ -1,7 +1,6 @@
 package dev.compare.mvcvsreact.react.common.exception;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 
 public class EntityNotFoundException extends MvcVsReactException {
 

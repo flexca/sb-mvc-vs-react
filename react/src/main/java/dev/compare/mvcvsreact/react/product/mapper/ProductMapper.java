@@ -1,11 +1,10 @@
 package dev.compare.mvcvsreact.react.product.mapper;
 
 import dev.compare.mvcvsreact.react.category.model.CategoryDto;
-import dev.compare.mvcvsreact.react.category.model.CategorySearchRequest;
 import dev.compare.mvcvsreact.react.common.datetime.DateProvider;
-import dev.compare.mvcvsreact.react.product.model.ProductRequest;
 import dev.compare.mvcvsreact.react.product.model.ProductDto;
 import dev.compare.mvcvsreact.react.product.model.ProductEntity;
+import dev.compare.mvcvsreact.react.product.model.ProductRequest;
 import dev.compare.mvcvsreact.react.product.model.ProductSearchRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
