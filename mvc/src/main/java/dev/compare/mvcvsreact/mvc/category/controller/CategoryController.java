@@ -5,12 +5,7 @@ import dev.compare.mvcvsreact.mvc.category.model.CategoryRequest;
 import dev.compare.mvcvsreact.mvc.category.model.CategorySearchRequest;
 import dev.compare.mvcvsreact.mvc.category.service.CategoryService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,17 +22,17 @@ public class CategoryController {
     }
 
     @GetMapping
-    public List<CategoryDto> search(CategorySearchRequest request) {
+    public List<CategoryDto> search(@ModelAttribute CategorySearchRequest request) {
         return categoryService.search(request);
     }
 
     @PostMapping
-    public CategoryDto create(CategoryRequest request) {
+    public CategoryDto create(@RequestBody CategoryRequest request) {
         return categoryService.create(request);
     }
 
     @PutMapping("/{id}")
-    public CategoryDto update(@PathVariable("id") String id, CategoryRequest request) {
+    public CategoryDto update(@PathVariable("id") String id, @RequestBody CategoryRequest request) {
         return categoryService.update(id, request);
     }
 
